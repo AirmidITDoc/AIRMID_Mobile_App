@@ -6,7 +6,6 @@ import 'package:airmid/src/provider/bolc/patient_summry/bloc/biling_details_bloc
 import 'package:airmid/src/view/patient_sumaary/widget/biling_data.dart';
 import 'package:airmid/src/widget/sizedbox.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:airmid/src/utils/extantion.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

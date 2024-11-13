@@ -1,7 +1,5 @@
-import 'dart:convert';
 import 'dart:developer';
 
-import 'package:airmid/src/constant/color.dart';
 import 'package:airmid/src/constant/loader.dart';
 import 'package:airmid/src/constant/string.dart';
 import 'package:airmid/src/model/op_list/appoiment_registation/patient_registationlist.dart';
@@ -60,7 +58,7 @@ class _AddApoimentState extends State<AddApoiment> {
   final TextEditingController _patientSearchController =
       TextEditingController();
   final TextEditingController _prefixSearchController = TextEditingController();
-  final TextEditingController _visitSearchController = TextEditingController();
+  // final TextEditingController _visitSearchController = TextEditingController();
   final TextEditingController _tariffSearchController = TextEditingController();
   final TextEditingController _departmentSearchController =
       TextEditingController();
@@ -1465,30 +1463,26 @@ class _AddApoimentState extends State<AddApoiment> {
                                                                     patient
                                                                         .regNo ==
                                                                     item.value);
-                                                        if (patient != null) {
-                                                          return patient
-                                                                  .firstName
-                                                                  .toLowerCase()
-                                                                  .contains(
-                                                                      searchValue
-                                                                          .toLowerCase()) ||
-                                                              patient.lastName
-                                                                  .toLowerCase()
-                                                                  .contains(
-                                                                      searchValue
-                                                                          .toLowerCase()) ||
-                                                              patient.regNo
-                                                                  .toLowerCase()
-                                                                  .contains(
-                                                                      searchValue
-                                                                          .toLowerCase()) ||
-                                                              patient.mobileNo
-                                                                  .toLowerCase()
-                                                                  .contains(
-                                                                      searchValue
-                                                                          .toLowerCase());
-                                                        }
-                                                        return false;
+                                                        return patient.firstName
+                                                                .toLowerCase()
+                                                                .contains(
+                                                                    searchValue
+                                                                        .toLowerCase()) ||
+                                                            patient.lastName
+                                                                .toLowerCase()
+                                                                .contains(
+                                                                    searchValue
+                                                                        .toLowerCase()) ||
+                                                            patient.regNo
+                                                                .toLowerCase()
+                                                                .contains(
+                                                                    searchValue
+                                                                        .toLowerCase()) ||
+                                                            patient.mobileNo
+                                                                .toLowerCase()
+                                                                .contains(
+                                                                    searchValue
+                                                                        .toLowerCase());
                                                       },
                                                     ),
                                                     onMenuStateChange:

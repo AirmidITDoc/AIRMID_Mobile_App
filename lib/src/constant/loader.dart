@@ -136,7 +136,7 @@ class Loader extends StatelessWidget {
   Widget build(BuildContext context) {
     return PopScope(
       canPop: false,
-      onPopInvoked: (didPop) {
+      onPopInvokedWithResult: (didPop, result) {
         return;
       },
       child: const Center(child: CircularProgressIndicator.adaptive()),

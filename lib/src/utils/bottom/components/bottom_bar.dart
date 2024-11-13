@@ -40,7 +40,7 @@ class _LandingPageState extends State<LandingPage> with WidgetsBindingObserver {
       valueListenable: currentTab,
       builder: (context, value, child) => PopScope(
         canPop: false,
-        onPopInvoked: (didPop) {
+        onPopInvokedWithResult: (didPop, result) {
           if (currentTab.value == 0) {
             return;
           }
